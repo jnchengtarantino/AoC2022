@@ -22,16 +22,12 @@ for line in lines:
     they, me = line.strip().split(" ")
     they = theyDict[they]
     me = meDict[me]
-    print(me)
     score += me
     theyMod = they -1
     if me == 0: theyMod-=1
     elif me == 6: theyMod+=1
     theyMod = theyMod%3 + 1
     score+=theyMod
-    print(theyMod)
-    print(score)
-    print()
 
 print(score)   
 
