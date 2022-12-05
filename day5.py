@@ -33,9 +33,6 @@ for line in lines:
         data[end-1] += data[start-1][-num:]
         data[start-1] = data[start-1][0:-num]
 
-res = ''
-for x in data:
-    res += x.pop()
-print(res)
+print(reduce(lambda x,y: x+y.pop(), data, ''))
 
 file.close()
