@@ -1,6 +1,6 @@
 import numpy as np
 from collections import Counter
-import itertools
+from functools import reduce
 file = open("testinput.txt")
 # file = open("dayXinput.txt")
 
