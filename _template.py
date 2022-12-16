@@ -1,6 +1,6 @@
 import numpy as np
 from collections import Counter, defaultdict
-from functools import reduce
+from functools import reduce, cache
 from itertools import accumulate
 from math import lcm
 import re
